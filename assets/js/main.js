@@ -4,6 +4,7 @@ var questionContainer=document.querySelector(".questionContainer")
 var timer=document.querySelector(".timer")
 var question=document.querySelector(".question")
 var answers=document.querySelector(".answers")
+var questionResult = document.querySelector("#question-results")
 var startTime=60
 var questionIndex=0
 var interval=0
@@ -11,24 +12,24 @@ var score = 0
 
 var questions= [
   {
-    question: "What is 2 + 2?",
-    choices: ["2", "7", "4", "9"],
-    correctAnswer: "4"
+    question: "Which one is not a primitive value type in js?",
+    choices: ["String", "Number", "Boolean", "Array"],
+    correctAnswer: "Array"
   },
   {
-    question: "What is 4 + 4?",
-    choices: ["2", "7", "4", "8"],
-    correctAnswer: "8"
+    question: "Which prefix cannot convert the number in String type to the Number type in js?",
+    choices: ["+", "number", "parseInt", "%"],
+    correctAnswer: "%"
   },
   {
-    question: "What is 1 + 1?",
-    choices: ["2", "8", "4", "3"],
-    correctAnswer: "2"
+    question: "What can you use to list the itmes in the js?",
+    choices: ["Number", "Boolean", "Array", "object"],
+    correctAnswer: "Array"
   },
   {
-    question: "What is 5 + 5?",
-    choices: ["2", "7", "10", "8"],
-    correctAnswer: "10"
+    question: "What separates js from other languages?",
+    choices: ["Being static", "Being dynamic", "Being stron", "Being hard"],
+    correctAnswer: "Being dynamic"
   }
 ]
 
@@ -87,4 +88,18 @@ function startQuiz(questionIndex) {
     startQuiz(questionIndex)
   }
   
- }
+}
+const style = document.getElementsByClassName("opener");
+style.textContent =`
+.opener{
+  background-color: salmon;
+  color: teal;
+}
+`
+(element, {
+  background: "teal",
+  color: "brown"
+})
+
+
+
