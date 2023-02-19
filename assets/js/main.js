@@ -35,7 +35,7 @@ var questions= [
 
 start.addEventListener("click", function(){
   opener.style.display = "none"
-  
+  questionContainer.style.display = "block"
   if (interval===0){
     interval=setInterval(function(){
       startTime--
@@ -43,6 +43,7 @@ start.addEventListener("click", function(){
       if (startTime<=0){
         clearInterval(interval)
         timer.innerHTML = "Time Up"
+        questionResult.style.display = "block"
       }
     }, 1000)
   }
@@ -71,6 +72,7 @@ function startQuiz(questionIndex) {
       score++
     } else {
       console.log("wrong")
+      startTime -= 10
       score--
       if (score <= 0) {
         score = 0

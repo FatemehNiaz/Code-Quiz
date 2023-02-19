@@ -1,0 +1,25 @@
+.opener, .questionContainer, #question-results{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 200px;
+}
+
+.questionContainer, #question-results {
+  display: none;
+}
+
+.answers{
+  list-style-type: none;
+}
+
+.answers li{
+  border:1px solid black;
+  border-radius: 5px;
+  background: #ffc0cb;
+  padding:5px;
+  margin: 5px;
+}
