@@ -1,4 +1,4 @@
-var opener=document.querySelector(".opener")
+//var opener=document.querySelector(".opener")
 var start=document.querySelector(".start")
 var questionContainer=document.querySelector(".questionContainer")
 var timer=document.querySelector(".timer")
