@@ -34,8 +34,8 @@ var questions= [
 ]
 
 start.addEventListener("click", function(){
-  opener.style.display = "none"
-  questionContainer.style.display = "block"
+  //opener.style.display = "none"
+ // questionContainer.style.display = "block"
   if (interval===0){
     interval=setInterval(function(){
       startTime--
