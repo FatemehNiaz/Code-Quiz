@@ -98,10 +98,10 @@ style.textContent =`
   color: teal;
 }
 `
-(element, {
-  background: "teal",
-  color: "brown"
-})
+//(element, {
+ // background: "teal",
+  //color: "brown"
+//})
 
 
 
