@@ -1,4 +1,4 @@
-//var opener=document.querySelector(".opener")
+var opener=document.querySelector(".opener")
 var start=document.querySelector(".start")
 var questionContainer=document.querySelector(".questionContainer")
 var timer=document.querySelector(".timer")
@@ -34,8 +34,8 @@ var questions= [
 ]
 
 start.addEventListener("click", function(){
-  //opener.style.display = "none"
- // questionContainer.style.display = "block"
+  opener.style.display = "none"
+ questionContainer.style.display = "block"
   if (interval===0){
     interval=setInterval(function(){
       startTime--
@@ -43,7 +43,7 @@ start.addEventListener("click", function(){
       if (startTime<=0){
         clearInterval(interval)
         timer.innerHTML = "Time Up"
-        //questionResult.style.display = "block"
+        questionResult.style.display = "block"
       }
     }, 1000)
   }
