@@ -91,13 +91,13 @@ function startQuiz(questionIndex) {
   }
   
 }
-const style = document.getElementsByClassName("opener");
-style.textContent =`
-.opener{
-  background-color: salmon;
-  color: teal;
-}
-`
+//const style = document.getElementsByClassName("opener");
+//style.textContent =`
+//.opener{
+ // background-color: salmon;
+  //color: teal;
+//}
+//`
 //(element, {
  // background: "teal",
   //color: "brown"
