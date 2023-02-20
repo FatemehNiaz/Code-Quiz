@@ -43,7 +43,7 @@ start.addEventListener("click", function(){
       if (startTime<=0){
         clearInterval(interval)
         timer.innerHTML = "Time Up"
-        questionResult.style.display = "block"
+        //questionResult.style.display = "block"
       }
     }, 1000)
   }
